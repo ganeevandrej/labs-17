@@ -1,0 +1,25 @@
+# include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[10];
+    int n, k, l;
+    float arif = 0;
+
+    cin >> n;
+    cin >> k;
+    cin >> l;
+
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+        for (int i = k; i <= l; i++) {
+            arif = arif + a[i];
+        }
+    arif = arif / (l - k + 1);
+
+    cout << arif << endl;
+    return 0;
+}
