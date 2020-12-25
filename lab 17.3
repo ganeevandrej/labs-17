@@ -1,0 +1,22 @@
+# include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[10];
+    int n, min = 1000;
+
+    cin >> n;
+
+
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    for (int i = 1; i < n; i+=2) {
+        if (a[i] < min)
+            min = a[i];;
+    }
+    cout << min << endl;
+    return 0;
+}
